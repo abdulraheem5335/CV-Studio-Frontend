@@ -1,0 +1,838 @@
+{
+  "designModes": {
+    "metadata": {
+      "version": "1.0.0",
+      "totalModes": 4,
+      "defaultMode": "nust-classic",
+      "toggleKey": "T",
+      "persistPreference": true
+    },
+
+    "modes": {
+      "nust-classic": {
+        "id": "nust-classic",
+        "name": "NUST Classic",
+        "description": "The authentic NUST experience with official colors and realistic campus feel",
+        "mood": "professional",
+        "unlockRequirement": null,
+
+        "colorPalette": {
+          "primary": "#1E3A5F",
+          "secondary": "#C9A227",
+          "accent": "#4A90D9",
+          "background": "#F5F7FA",
+          "surface": "#FFFFFF",
+          "text": {
+            "primary": "#1A1A2E",
+            "secondary": "#4A5568",
+            "muted": "#718096"
+          },
+          "success": "#38A169",
+          "warning": "#D69E2E",
+          "error": "#E53E3E",
+          "xp": "#9F7AEA",
+          "coins": "#ECC94B"
+        },
+
+        "mapStyle": {
+          "groundColor": "#90B77D",
+          "roadColor": "#6B7280",
+          "roadBorder": "#4B5563",
+          "waterColor": "#60A5FA",
+          "shadowColor": "rgba(0,0,0,0.2)",
+          "gridVisible": false,
+          "gridColor": "rgba(0,0,0,0.05)",
+          "ambientLight": 1.0,
+          "weatherEffects": ["sunny", "cloudy"]
+        },
+
+        "tiles": {
+          "academic": {
+            "fillColor": "#3B82F6",
+            "strokeColor": "#1E40AF",
+            "strokeWidth": 3,
+            "cornerRadius": 8,
+            "shadow": true,
+            "pattern": "solid",
+            "icon": "🏛️"
+          },
+          "hostel": {
+            "fillColor": "#8B5CF6",
+            "strokeColor": "#5B21B6",
+            "strokeWidth": 3,
+            "cornerRadius": 8,
+            "shadow": true,
+            "pattern": "solid",
+            "icon": "🏠"
+          },
+          "sports": {
+            "fillColor": "#10B981",
+            "strokeColor": "#047857",
+            "strokeWidth": 3,
+            "cornerRadius": 8,
+            "shadow": true,
+            "pattern": "striped",
+            "icon": "⚽"
+          },
+          "food": {
+            "fillColor": "#F59E0B",
+            "strokeColor": "#B45309",
+            "strokeWidth": 3,
+            "cornerRadius": 8,
+            "shadow": true,
+            "pattern": "solid",
+            "icon": "🍽️"
+          },
+          "landmark": {
+            "fillColor": "#EF4444",
+            "strokeColor": "#B91C1C",
+            "strokeWidth": 3,
+            "cornerRadius": 8,
+            "shadow": true,
+            "pattern": "solid",
+            "icon": "⭐"
+          },
+          "gate": {
+            "fillColor": "#6366F1",
+            "strokeColor": "#4338CA",
+            "strokeWidth": 3,
+            "cornerRadius": 4,
+            "shadow": true,
+            "pattern": "solid",
+            "icon": "🚪"
+          }
+        },
+
+        "character": {
+          "style": "chibi",
+          "size": 40,
+          "headColor": "#FCD34D",
+          "bodyColor": "#3B82F6",
+          "outlineColor": "#1E3A5F",
+          "outlineWidth": 2,
+          "animation": {
+            "idle": { "type": "bounce", "duration": 1000, "amplitude": 2 },
+            "walk": { "type": "bob", "duration": 200, "amplitude": 3 },
+            "interact": { "type": "pulse", "duration": 300, "scale": 1.2 }
+          },
+          "trail": false,
+          "glow": false
+        },
+
+        "ui": {
+          "panels": {
+            "background": "rgba(255,255,255,0.95)",
+            "border": "1px solid #E2E8F0",
+            "borderRadius": "12px",
+            "shadow": "0 4px 20px rgba(0,0,0,0.1)",
+            "blur": "8px"
+          },
+          "buttons": {
+            "primary": {
+              "background": "linear-gradient(135deg, #1E3A5F 0%, #2D5A87 100%)",
+              "text": "#FFFFFF",
+              "borderRadius": "8px",
+              "hover": { "scale": 1.02, "brightness": 1.1 }
+            },
+            "secondary": {
+              "background": "#F1F5F9",
+              "text": "#1E3A5F",
+              "borderRadius": "8px",
+              "hover": { "scale": 1.02, "background": "#E2E8F0" }
+            }
+          },
+          "badges": {
+            "style": "rounded",
+            "glow": false
+          },
+          "notifications": {
+            "position": "top-right",
+            "animation": "slide",
+            "duration": 3000
+          }
+        },
+
+        "typography": {
+          "fontFamily": {
+            "heading": "'Poppins', sans-serif",
+            "body": "'Inter', sans-serif",
+            "mono": "'Fira Code', monospace"
+          },
+          "sizes": {
+            "xs": "0.75rem",
+            "sm": "0.875rem",
+            "base": "1rem",
+            "lg": "1.125rem",
+            "xl": "1.25rem",
+            "2xl": "1.5rem",
+            "3xl": "2rem"
+          }
+        },
+
+        "animations": {
+          "pageTransition": { "type": "fade", "duration": 300 },
+          "elementHover": { "type": "lift", "duration": 200, "distance": 4 },
+          "xpGain": { "type": "float-up", "duration": 1000, "particles": false },
+          "levelUp": { "type": "burst", "duration": 1500, "confetti": true }
+        },
+
+        "sounds": {
+          "enabled": true,
+          "volume": 0.5,
+          "effects": {
+            "click": "click-soft.mp3",
+            "xpGain": "coin-collect.mp3",
+            "levelUp": "fanfare.mp3",
+            "notification": "pop.mp3"
+          }
+        }
+      },
+
+      "cyberpunk-neon": {
+        "id": "cyberpunk-neon",
+        "name": "Cyberpunk NUST",
+        "description": "Futuristic neon-lit campus with glowing edges and synthwave vibes",
+        "mood": "futuristic",
+        "unlockRequirement": { "type": "level", "value": 5 },
+
+        "colorPalette": {
+          "primary": "#FF00FF",
+          "secondary": "#00FFFF",
+          "accent": "#FFFF00",
+          "background": "#0D0D1A",
+          "surface": "#1A1A2E",
+          "text": {
+            "primary": "#FFFFFF",
+            "secondary": "#B8B8D1",
+            "muted": "#6B6B8D"
+          },
+          "success": "#00FF88",
+          "warning": "#FFB800",
+          "error": "#FF0055",
+          "xp": "#FF00FF",
+          "coins": "#00FFFF"
+        },
+
+        "mapStyle": {
+          "groundColor": "#0D0D1A",
+          "roadColor": "#1A1A2E",
+          "roadBorder": "#FF00FF",
+          "waterColor": "#00FFFF",
+          "shadowColor": "rgba(255,0,255,0.3)",
+          "gridVisible": true,
+          "gridColor": "rgba(0,255,255,0.1)",
+          "ambientLight": 0.6,
+          "weatherEffects": ["rain", "fog", "neon-flicker"]
+        },
+
+        "tiles": {
+          "academic": {
+            "fillColor": "#1A1A2E",
+            "strokeColor": "#00FFFF",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": false,
+            "pattern": "circuit",
+            "icon": "💠",
+            "glow": { "color": "#00FFFF", "blur": 15, "animated": true }
+          },
+          "hostel": {
+            "fillColor": "#1A1A2E",
+            "strokeColor": "#FF00FF",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": false,
+            "pattern": "circuit",
+            "icon": "🏢",
+            "glow": { "color": "#FF00FF", "blur": 15, "animated": true }
+          },
+          "sports": {
+            "fillColor": "#1A1A2E",
+            "strokeColor": "#00FF88",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": false,
+            "pattern": "hologram",
+            "icon": "🎮",
+            "glow": { "color": "#00FF88", "blur": 15, "animated": true }
+          },
+          "food": {
+            "fillColor": "#1A1A2E",
+            "strokeColor": "#FFFF00",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": false,
+            "pattern": "neon-sign",
+            "icon": "🍜",
+            "glow": { "color": "#FFFF00", "blur": 15, "animated": true }
+          },
+          "landmark": {
+            "fillColor": "#1A1A2E",
+            "strokeColor": "#FF0055",
+            "strokeWidth": 3,
+            "cornerRadius": 0,
+            "shadow": false,
+            "pattern": "pyramid",
+            "icon": "🔺",
+            "glow": { "color": "#FF0055", "blur": 20, "animated": true }
+          },
+          "gate": {
+            "fillColor": "#1A1A2E",
+            "strokeColor": "#FFFFFF",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": false,
+            "pattern": "portal",
+            "icon": "🌀",
+            "glow": { "color": "#FFFFFF", "blur": 15, "animated": true }
+          }
+        },
+
+        "character": {
+          "style": "cyber-avatar",
+          "size": 44,
+          "headColor": "#00FFFF",
+          "bodyColor": "#FF00FF",
+          "outlineColor": "#FFFFFF",
+          "outlineWidth": 1,
+          "animation": {
+            "idle": { "type": "glitch", "duration": 2000, "intensity": 0.3 },
+            "walk": { "type": "hover-glide", "duration": 150, "amplitude": 2 },
+            "interact": { "type": "hologram-flicker", "duration": 400, "opacity": 0.7 }
+          },
+          "trail": { "enabled": true, "color": "#FF00FF", "length": 8, "glow": true },
+          "glow": { "enabled": true, "color": "#00FFFF", "blur": 10, "pulse": true }
+        },
+
+        "ui": {
+          "panels": {
+            "background": "rgba(26,26,46,0.9)",
+            "border": "1px solid #FF00FF",
+            "borderRadius": "0px",
+            "shadow": "0 0 30px rgba(255,0,255,0.3), inset 0 0 20px rgba(0,255,255,0.1)",
+            "blur": "12px",
+            "scanlines": true
+          },
+          "buttons": {
+            "primary": {
+              "background": "linear-gradient(90deg, #FF00FF 0%, #00FFFF 100%)",
+              "text": "#0D0D1A",
+              "borderRadius": "0px",
+              "hover": { "scale": 1.05, "glitch": true }
+            },
+            "secondary": {
+              "background": "transparent",
+              "text": "#00FFFF",
+              "border": "1px solid #00FFFF",
+              "borderRadius": "0px",
+              "hover": { "scale": 1.05, "background": "rgba(0,255,255,0.1)" }
+            }
+          },
+          "badges": {
+            "style": "hexagon",
+            "glow": true
+          },
+          "notifications": {
+            "position": "bottom-center",
+            "animation": "glitch-in",
+            "duration": 4000
+          }
+        },
+
+        "typography": {
+          "fontFamily": {
+            "heading": "'Orbitron', sans-serif",
+            "body": "'Rajdhani', sans-serif",
+            "mono": "'Share Tech Mono', monospace"
+          },
+          "sizes": {
+            "xs": "0.75rem",
+            "sm": "0.875rem",
+            "base": "1rem",
+            "lg": "1.125rem",
+            "xl": "1.25rem",
+            "2xl": "1.5rem",
+            "3xl": "2rem"
+          },
+          "effects": {
+            "heading": { "textShadow": "0 0 10px currentColor" },
+            "glitch": true
+          }
+        },
+
+        "animations": {
+          "pageTransition": { "type": "glitch-wipe", "duration": 400 },
+          "elementHover": { "type": "neon-pulse", "duration": 300 },
+          "xpGain": { "type": "data-stream", "duration": 800, "particles": true },
+          "levelUp": { "type": "matrix-rain", "duration": 2000, "confetti": false }
+        },
+
+        "sounds": {
+          "enabled": true,
+          "volume": 0.6,
+          "effects": {
+            "click": "cyber-click.mp3",
+            "xpGain": "data-collect.mp3",
+            "levelUp": "synth-fanfare.mp3",
+            "notification": "cyber-alert.mp3"
+          },
+          "ambientMusic": "synthwave-loop.mp3"
+        }
+      },
+
+      "cozy-campus": {
+        "id": "cozy-campus",
+        "name": "Cozy Campus",
+        "description": "Warm, hand-drawn aesthetic with soft colors and wholesome vibes",
+        "mood": "relaxing",
+        "unlockRequirement": { "type": "quests", "value": 10 },
+
+        "colorPalette": {
+          "primary": "#D4A373",
+          "secondary": "#E9C46A",
+          "accent": "#2A9D8F",
+          "background": "#FDF8F3",
+          "surface": "#FEFCF9",
+          "text": {
+            "primary": "#5C4033",
+            "secondary": "#8B7355",
+            "muted": "#A89580"
+          },
+          "success": "#588157",
+          "warning": "#E9C46A",
+          "error": "#BC6C25",
+          "xp": "#E76F51",
+          "coins": "#E9C46A"
+        },
+
+        "mapStyle": {
+          "groundColor": "#C8E6C9",
+          "roadColor": "#D7CCC8",
+          "roadBorder": "#BCAAA4",
+          "waterColor": "#81D4FA",
+          "shadowColor": "rgba(92,64,51,0.15)",
+          "gridVisible": false,
+          "gridColor": "rgba(0,0,0,0)",
+          "ambientLight": 1.2,
+          "weatherEffects": ["leaves", "butterflies", "sunshine"],
+          "handDrawnEdges": true
+        },
+
+        "tiles": {
+          "academic": {
+            "fillColor": "#FFCCBC",
+            "strokeColor": "#8D6E63",
+            "strokeWidth": 4,
+            "cornerRadius": 16,
+            "shadow": true,
+            "pattern": "doodle",
+            "icon": "📚",
+            "wobble": true
+          },
+          "hostel": {
+            "fillColor": "#E1BEE7",
+            "strokeColor": "#7B1FA2",
+            "strokeWidth": 4,
+            "cornerRadius": 16,
+            "shadow": true,
+            "pattern": "doodle",
+            "icon": "🏡",
+            "wobble": true
+          },
+          "sports": {
+            "fillColor": "#C8E6C9",
+            "strokeColor": "#388E3C",
+            "strokeWidth": 4,
+            "cornerRadius": 16,
+            "shadow": true,
+            "pattern": "grass-texture",
+            "icon": "🌸",
+            "wobble": true
+          },
+          "food": {
+            "fillColor": "#FFE0B2",
+            "strokeColor": "#E65100",
+            "strokeWidth": 4,
+            "cornerRadius": 16,
+            "shadow": true,
+            "pattern": "checkered",
+            "icon": "☕",
+            "wobble": true,
+            "steam": true
+          },
+          "landmark": {
+            "fillColor": "#FFF9C4",
+            "strokeColor": "#F9A825",
+            "strokeWidth": 4,
+            "cornerRadius": 16,
+            "shadow": true,
+            "pattern": "sparkle",
+            "icon": "✨",
+            "wobble": true
+          },
+          "gate": {
+            "fillColor": "#B3E5FC",
+            "strokeColor": "#0288D1",
+            "strokeWidth": 4,
+            "cornerRadius": 12,
+            "shadow": true,
+            "pattern": "doodle",
+            "icon": "🚗",
+            "wobble": true
+          }
+        },
+
+        "character": {
+          "style": "sticker",
+          "size": 48,
+          "headColor": "#FFCC80",
+          "bodyColor": "#81C784",
+          "outlineColor": "#5C4033",
+          "outlineWidth": 3,
+          "animation": {
+            "idle": { "type": "sway", "duration": 2000, "amplitude": 3 },
+            "walk": { "type": "skip", "duration": 300, "amplitude": 5 },
+            "interact": { "type": "hearts", "duration": 500, "particles": 5 }
+          },
+          "trail": { "enabled": true, "type": "footprints", "color": "#D7CCC8" },
+          "glow": false,
+          "blush": true
+        },
+
+        "ui": {
+          "panels": {
+            "background": "rgba(254,252,249,0.95)",
+            "border": "3px solid #D4A373",
+            "borderRadius": "24px",
+            "shadow": "4px 4px 0px #D4A373",
+            "blur": "0px",
+            "paperTexture": true
+          },
+          "buttons": {
+            "primary": {
+              "background": "#E76F51",
+              "text": "#FFFFFF",
+              "borderRadius": "20px",
+              "border": "3px solid #5C4033",
+              "hover": { "scale": 1.05, "wiggle": true }
+            },
+            "secondary": {
+              "background": "#FDF8F3",
+              "text": "#5C4033",
+              "borderRadius": "20px",
+              "border": "3px solid #D4A373",
+              "hover": { "scale": 1.05, "background": "#FFE8D6" }
+            }
+          },
+          "badges": {
+            "style": "sticker",
+            "glow": false,
+            "shadow": true
+          },
+          "notifications": {
+            "position": "top-center",
+            "animation": "bounce-in",
+            "duration": 3500
+          }
+        },
+
+        "typography": {
+          "fontFamily": {
+            "heading": "'Quicksand', sans-serif",
+            "body": "'Nunito', sans-serif",
+            "mono": "'Comic Neue', cursive"
+          },
+          "sizes": {
+            "xs": "0.8rem",
+            "sm": "0.9rem",
+            "base": "1.05rem",
+            "lg": "1.2rem",
+            "xl": "1.35rem",
+            "2xl": "1.6rem",
+            "3xl": "2.2rem"
+          },
+          "effects": {
+            "heading": { "letterSpacing": "0.02em" }
+          }
+        },
+
+        "animations": {
+          "pageTransition": { "type": "page-flip", "duration": 500 },
+          "elementHover": { "type": "wiggle", "duration": 300 },
+          "xpGain": { "type": "sparkle-float", "duration": 1200, "particles": true },
+          "levelUp": { "type": "confetti-pop", "duration": 2000, "confetti": true }
+        },
+
+        "sounds": {
+          "enabled": true,
+          "volume": 0.4,
+          "effects": {
+            "click": "pop-soft.mp3",
+            "xpGain": "chime.mp3",
+            "levelUp": "celebration.mp3",
+            "notification": "ding.mp3"
+          },
+          "ambientMusic": "lo-fi-campus.mp3"
+        }
+      },
+
+      "pixel-retro": {
+        "id": "pixel-retro",
+        "name": "Pixel Retro",
+        "description": "8-bit nostalgia with pixel art graphics and chiptune vibes",
+        "mood": "nostalgic",
+        "unlockRequirement": { "type": "miniGames", "value": 20 },
+
+        "colorPalette": {
+          "primary": "#5B6EE1",
+          "secondary": "#AC3232",
+          "accent": "#99E550",
+          "background": "#222034",
+          "surface": "#3F3F74",
+          "text": {
+            "primary": "#FFFFFF",
+            "secondary": "#CBDBFC",
+            "muted": "#847E87"
+          },
+          "success": "#6ABE30",
+          "warning": "#FBAF5D",
+          "error": "#D95763",
+          "xp": "#76428A",
+          "coins": "#FBF236"
+        },
+
+        "mapStyle": {
+          "groundColor": "#37946E",
+          "roadColor": "#595652",
+          "roadBorder": "#3F3F74",
+          "waterColor": "#5FCDE4",
+          "shadowColor": "rgba(0,0,0,0.5)",
+          "gridVisible": true,
+          "gridColor": "rgba(0,0,0,0.3)",
+          "gridSize": 16,
+          "ambientLight": 0.9,
+          "weatherEffects": ["8bit-rain", "pixel-snow"],
+          "pixelPerfect": true
+        },
+
+        "tiles": {
+          "academic": {
+            "fillColor": "#5B6EE1",
+            "strokeColor": "#222034",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": true,
+            "pattern": "brick",
+            "icon": "🏫",
+            "pixelScale": 4
+          },
+          "hostel": {
+            "fillColor": "#AC3232",
+            "strokeColor": "#222034",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": true,
+            "pattern": "brick",
+            "icon": "🛏️",
+            "pixelScale": 4
+          },
+          "sports": {
+            "fillColor": "#6ABE30",
+            "strokeColor": "#222034",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": true,
+            "pattern": "grass-8bit",
+            "icon": "⚔️",
+            "pixelScale": 4
+          },
+          "food": {
+            "fillColor": "#FBAF5D",
+            "strokeColor": "#222034",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": true,
+            "pattern": "tile",
+            "icon": "🍖",
+            "pixelScale": 4
+          },
+          "landmark": {
+            "fillColor": "#FBF236",
+            "strokeColor": "#222034",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": true,
+            "pattern": "castle",
+            "icon": "🏰",
+            "pixelScale": 4
+          },
+          "gate": {
+            "fillColor": "#76428A",
+            "strokeColor": "#222034",
+            "strokeWidth": 2,
+            "cornerRadius": 0,
+            "shadow": true,
+            "pattern": "door",
+            "icon": "🚩",
+            "pixelScale": 4
+          }
+        },
+
+        "character": {
+          "style": "sprite-8bit",
+          "size": 32,
+          "headColor": "#FBF236",
+          "bodyColor": "#5B6EE1",
+          "outlineColor": "#222034",
+          "outlineWidth": 2,
+          "spriteSheet": {
+            "frameWidth": 16,
+            "frameHeight": 16,
+            "scale": 2,
+            "animations": {
+              "idle": { "frames": [0, 1], "speed": 500 },
+              "walkDown": { "frames": [0, 1, 2, 1], "speed": 150 },
+              "walkUp": { "frames": [3, 4, 5, 4], "speed": 150 },
+              "walkLeft": { "frames": [6, 7, 8, 7], "speed": 150 },
+              "walkRight": { "frames": [9, 10, 11, 10], "speed": 150 }
+            }
+          },
+          "animation": {
+            "idle": { "type": "sprite-cycle", "duration": 500 },
+            "walk": { "type": "sprite-walk", "duration": 150 },
+            "interact": { "type": "flash", "duration": 200, "times": 3 }
+          },
+          "trail": false,
+          "glow": false
+        },
+
+        "ui": {
+          "panels": {
+            "background": "#3F3F74",
+            "border": "4px solid #222034",
+            "borderRadius": "0px",
+            "shadow": "4px 4px 0px #222034",
+            "blur": "0px",
+            "pixelBorder": true
+          },
+          "buttons": {
+            "primary": {
+              "background": "#5B6EE1",
+              "text": "#FFFFFF",
+              "borderRadius": "0px",
+              "border": "4px solid #222034",
+              "hover": { "scale": 1, "invert": true }
+            },
+            "secondary": {
+              "background": "#3F3F74",
+              "text": "#CBDBFC",
+              "borderRadius": "0px",
+              "border": "4px solid #222034",
+              "hover": { "scale": 1, "background": "#5B6EE1" }
+            }
+          },
+          "badges": {
+            "style": "pixel-medal",
+            "glow": false
+          },
+          "notifications": {
+            "position": "top-left",
+            "animation": "typewriter",
+            "duration": 3000
+          },
+          "healthBar": {
+            "style": "hearts",
+            "pixelated": true
+          }
+        },
+
+        "typography": {
+          "fontFamily": {
+            "heading": "'Press Start 2P', cursive",
+            "body": "'VT323', monospace",
+            "mono": "'Press Start 2P', cursive"
+          },
+          "sizes": {
+            "xs": "0.6rem",
+            "sm": "0.7rem",
+            "base": "0.8rem",
+            "lg": "0.9rem",
+            "xl": "1rem",
+            "2xl": "1.2rem",
+            "3xl": "1.5rem"
+          },
+          "effects": {
+            "textRendering": "pixelated"
+          }
+        },
+
+        "animations": {
+          "pageTransition": { "type": "screen-wipe", "duration": 300 },
+          "elementHover": { "type": "pixel-bounce", "duration": 200 },
+          "xpGain": { "type": "score-popup", "duration": 1000, "particles": false },
+          "levelUp": { "type": "level-up-banner", "duration": 2500, "confetti": false }
+        },
+
+        "sounds": {
+          "enabled": true,
+          "volume": 0.5,
+          "effects": {
+            "click": "8bit-click.mp3",
+            "xpGain": "coin-8bit.mp3",
+            "levelUp": "level-up-8bit.mp3",
+            "notification": "blip.mp3"
+          },
+          "ambientMusic": "chiptune-campus.mp3"
+        }
+      }
+    },
+
+    "modeTransitions": {
+      "duration": 800,
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "effects": {
+        "nust-classic_to_cyberpunk-neon": "digital-dissolve",
+        "nust-classic_to_cozy-campus": "watercolor-blend",
+        "nust-classic_to_pixel-retro": "pixelate",
+        "cyberpunk-neon_to_cozy-campus": "glitch-to-warmth",
+        "cyberpunk-neon_to_pixel-retro": "scan-lines",
+        "cozy-campus_to_pixel-retro": "paper-to-screen"
+      }
+    },
+
+    "unlockSystem": {
+      "notifications": {
+        "showUnlockPopup": true,
+        "celebrationEffect": true
+      },
+      "preview": {
+        "allowLockedPreview": true,
+        "previewDuration": 30
+      }
+    },
+
+    "accessibility": {
+      "highContrast": {
+        "enabled": false,
+        "modifications": {
+          "increaseContrast": 1.5,
+          "boldText": true,
+          "largerFonts": 1.2
+        }
+      },
+      "reducedMotion": {
+        "enabled": false,
+        "modifications": {
+          "disableParticles": true,
+          "simplifyAnimations": true,
+          "reduceDuration": 0.5
+        }
+      },
+      "colorBlindModes": {
+        "deuteranopia": true,
+        "protanopia": true,
+        "tritanopia": true
+      }
+    }
+  }
+}
